@@ -45,15 +45,5 @@ public class Conta {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-    
-    public boolean depositar(double valor){
-        this.setSaldo(this.getSaldo() + valor);
-        return true;
-    }
-
-    public boolean realizaSaque(double valor){
-        this.setSaldo(this.getSaldo() - valor);
-        
-        return true;
-    }
+   
 }
