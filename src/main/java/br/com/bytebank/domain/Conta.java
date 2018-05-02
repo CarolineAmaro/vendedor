@@ -45,4 +45,9 @@ public class Conta {
         this.cliente = cliente;
     }
 
+    public boolean realizaSaque(double valor){
+        this.setSaldo(this.getSaldo() - valor);
+        
+        return true;
+    }
 }
