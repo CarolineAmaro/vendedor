@@ -11,6 +11,7 @@ public class Conta {
         this.cliente = cliente;
         this.agencia = agencia;
         this.conta = conta;
+        this.saldo = 0;
     }
 
     public int getAgencia() {
@@ -43,6 +44,11 @@ public class Conta {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+    
+    public boolean depositar(double valor){
+        this.setSaldo(this.getSaldo() + valor);
+        return true;
     }
 
 }
