@@ -9,6 +9,7 @@ public class Transacao {
 
     public Transacao(Conta conta, Autenticador autenticador) {
         this.conta = conta;
+        this.autenticador = autenticador;
     }
 
     public void sacar(double valor) {
