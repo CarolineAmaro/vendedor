@@ -23,5 +23,16 @@ public class ContaTest {
         conta.realizaSaque(100);
         
         assertEquals(100, conta.getSaldo(), 0.001);
+
+    }    
+    
+    @Test
+    public void testRealizandoDeposito(){
+        Cliente cliente = new Cliente("Fabricio Oliveira", "417.481.378.75");
+        Conta conta = new Conta(cliente, 2322, 331213);
+        
+        conta.depositar(1000.00);
+        
+        assertEquals(1000.00, conta.getSaldo(), 0.001);
     }
 }
