@@ -14,12 +14,12 @@ public class Transacao {
 
     public void sacar(double valor) {
         if (this.autenticador.validaConta(this.conta)) {
-            this.conta.setSaldo(this.conta.getSaldo() + valor);
+            this.conta.setSaldo(this.conta.getSaldo() - valor);
         }
     }
 
     public void depositar(double valor) {
-        this.conta.setSaldo(this.conta.getSaldo() - valor);
+        this.conta.setSaldo(this.conta.getSaldo() + valor);
     }
 
 }
